@@ -3,7 +3,7 @@ import { Recipe } from '../types';
 
 // Use local network IP or ngrok for physical device testing if needed
 // For iOS simulator, localhost works. For Android, use 10.0.2.2
-const API_URL = 'http://localhost:8080/api';
+const API_URL = 'https://forgelog-ctgx.onrender.com/api';
 
 export const scanImage = async (imageUri: string, token: string, mimeType: string): Promise<Recipe> => {
   try {
